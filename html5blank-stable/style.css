@@ -1,0 +1,117 @@
+/*
+	Theme Name: HTML5 Blank
+	Theme URI: http://html5blank.com
+	Description: HTML5 Blank WordPress Theme
+	Version: 1.4.3
+	Author: Todd Motto (@toddmotto)
+	Author URI: http://toddmotto.com
+	Tags: Blank, HTML5, CSS3
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+/*General*/
+/*General*/
+body {
+    background-color: #8f4df8;
+    background-image: linear-gradient(to bottom right, #8F4DF8 35%, #4DF88F );
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+}
+
+
+.heading{
+    margin-bottom: 1em;
+    margin-top: 60px;
+    padding-top: 10px;
+    text-align: center;
+}
+.heading h2{
+    color: #fff;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 3em;
+    letter-spacing: 0.05em;
+}
+.heading i{
+    margin-left: 1em;
+    text-shadow: none;
+}
+
+/*Partie formulaire*/
+.button1{
+    background-color: transparent;
+    border: 1px solid #ddd;
+    border-radius: 0.3em;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.35em;
+    text-transform: uppercase;
+    transition: 0.2s;
+    transition-timing-function: linear;
+    width: 100%;
+}
+.button1:hover{
+    background-color: #F88F4D;
+}
+.buttonContainer{ 
+    margin-left: 0;
+}
+
+@media only screen and (max-width: 575px) { /*Ajuste la margin des boutons lorsque mode smartphone*/
+    .buttonContainer {
+      margin-top: .50rem;
+    }
+}
+
+/*Partie contenu liste*/
+#list-items{
+    padding-top: 1.4em;
+}
+.listBox{
+    background: #fff;
+    border-radius: 4px;
+    filter: drop-shadow(3px 4px 5px #8f4df8);
+    margin-top: 10px;
+}
+.itemLine{
+    list-style: none;
+}
+.itemLine input{
+    margin-right: 1em;
+}
+
+.ico{
+    cursor: pointer; 
+    float: right;
+    margin-right: 3rem;
+    padding: 0;
+}
+.btn:hover {
+    color: #F88F4D;
+}
+.onSelect{
+    background-color: #DCDCDC;
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px grey;
+    padding: 0 1% 0;
+    width: 95%;
+    
+}
+.editable{ /*Style lorsque mode modification active pour meilleur UX*/
+    border: 0.08em solid #C0C0C0;
+    border-radius: 0.2em;
+    color: #696969;
+    padding-left: 0.3em;
+    width: 30%;
+}
+
+.onSelectIco{
+    margin-right: 0;
+    padding-left: 3em;
+    color: green;
+}
+
+.onLoad {
+    cursor: progress !important;
+}
+
